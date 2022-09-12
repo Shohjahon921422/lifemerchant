@@ -1,0 +1,335 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700);
+@import "https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap";
+@import url(fonts-Raleway.css);
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    color: #41464b;
+}
+.logo_vhod{
+    width: 550px;
+    max-width: 95%;
+}
+
+
+
+.form-vhod{
+    width: 100%;
+    max-width: 350px;
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+}
+.form-vhod input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.form-vhod input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.form-vhod .checkbox {
+    font-weight: 400;
+}
+.form-vhod .form-floating:focus-within {
+  z-index: 2;
+}
+.reg_message {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    position: relative;
+    padding: .75rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    display: none;
+}
+
+header, .header_menu{
+    border: none;
+    min-height: 50px;
+    border-radius: 0;
+}
+
+
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  /* rtl:raw:
+  right: 0;
+  */
+  bottom: 0;
+  /* rtl:remove */
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 48px 0 0; /* Height of navbar */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    top: 5rem;
+  }
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #727272;
+}
+
+.sidebar .nav-link.active {
+  color: #007bff;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+/*
+ * Navbar
+ */
+
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, .25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .navbar-toggler {
+  top: .25rem;
+  right: 1rem;
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+
+.header-panel{
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.text-span-cabinet-no{
+    font-size: 1.2rem;
+    text-align: center;
+    display: block;
+}
+
+.header-bottom-top{
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.header-bottom-top:hover{
+    background: rgba(0, 0, 0, 0.1);
+    color: #f6f6f6;
+}
+.max-120-px{
+    max-width: 120px;
+}
+
+
+.box_tarif .box_tarif_b{
+    text-decoration: none;
+    color: inherit;
+    cursor: inherit;
+}
+
+.box_tarif .box_tarif_b .box_tarif_b_head .box_tarif_b_head_name{
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    display: inline-block;
+    border-bottom: 1px solid #7bbf9f;
+}
+.box_tarif .box_tarif_b .box_tarif_b_head .box_tarif_b_head_price{
+    font-size: 2.5rem;
+}
+
+.box_tarif .box_tarif_b .box_tarif_b_info ul{
+    list-style: none;
+    padding-left: 0;
+}
+.box_tarif .box_tarif_b .box_tarif_b_info ul li{
+    margin-bottom: 0.5rem;
+}
+
+.box_tarif .box_tarif_b .box_tarif_b_info .box_tarif_b_info_name{
+text-align: center;
+    margin: 2rem 0;
+    font-size: 1rem;
+}
+.box_tarif .box_tarif_b .box_tarif_b_info .box_tarif_b_info_price_econom{
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 1rem;
+}
+.text_pay_tarif_head{
+        font-size: 1.2rem;
+}
+.pay-platesh {
+    display: block;
+    text-align: center;
+        padding: 0;
+}
+.pay-platesh li {
+    position: relative;
+    margin-bottom: 20px;
+    display: block;
+}
+.pay-platesh li button {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+    transition: all .5s ease;
+    background-color: #ece7e0;
+    vertical-align: top;
+    border: 1px solid #ece7e0;
+    cursor: pointer;
+    align-items: center;
+}
+.pay-platesh li button > div.pay_img {
+    height: 60px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    width: 300px;
+}
+.pay-platesh li button > div.pay_img > span.img {
+    width: 135px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pay-platesh li button > div.pay_img > span.img > img {
+    max-width: 65px;
+    max-height: 40px;
+}
+.pay-platesh li button > div.pay_img span.pay_name{
+    text-align: left;
+}
+.pay-platesh li button > div.pay_sum{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5rem;
+    height: 60px;
+    flex-direction: column;
+}
+.pay-platesh li button > div.pay_name_tarif {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+.pay-platesh li button > div.pay_bottom {
+    display: inline-block;
+    height: auto;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, #ffae12, #ff7f0e);
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    padding: 0.4rem 0.7rem;
+/*    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    margin-left: 10px;
+    margin-top: 11px;*/
+}
+.pay-platesh li button > div.pay_bottom:hover {
+    background: linear-gradient(to bottom, #ffe05a 0%, #ffaa04 100%);
+    text-decoration: none;
+}
+
+.reg_message {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    position: relative;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    display: none;
+}
+
+@media (max-width: 767.98px) {
+    .pay-platesh li {
+        display: flex;
+        justify-content: center;
+    }
+    .pay-platesh li button{
+        flex-direction: column;
+        padding: 1rem;
+    }
+}
